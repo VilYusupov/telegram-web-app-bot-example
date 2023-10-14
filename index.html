@@ -419,6 +419,7 @@
 
         // actions
         sendMessage(msg_id, with_webview) {
+            Telegram.WebApp.sendData("Send message");
             if (!DemoApp.initDataUnsafe.query_id) {
                 alert('WebViewQueryId not defined');
                 return;
